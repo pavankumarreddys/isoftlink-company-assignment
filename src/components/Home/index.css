@@ -1,0 +1,61 @@
+.home-page-bgm{
+    background-image: url("https://schoolaura.com/Content/new_assets/images/header/banner-bg.png");
+    background-repeat: no-repeat;
+}
+.banner-heading{
+    font-weight: bold;
+    font-size: 46px;
+}
+.banner-para{
+    font-size: 26px;
+}
+.hero-services-bg {
+    position: absolute;
+    left: -1%;
+    bottom: 0;
+    height: 280px;
+    width: 100px;
+    background-image: url('https://schoolaura.com/Content/new_assets/images/header/header-girl-icon.png');
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.card-same{
+    width: 22%;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px 10px;
+    margin: 0;
+    -webkit-box-shadow: 2px 2px 10px #0d1028;
+    box-shadow: 2px 2px 10px #0d1028;
+}
+.card-same-login{
+    background-color: #fff;
+    width: 100%;
+    padding-bottom: 10px;
+    -webkit-box-shadow: 2px 2px 10px #0d1028;
+    box-shadow: 2px 2px 10px #0d1028;
+}
+.card-btn{
+    background: #ff5202;
+    margin: 5px;
+    border-radius: 100px;
+    width: 75%;
+    color: white;
+    
+}
+
+.boss-pic{
+    position: absolute;
+    z-index: 2;
+    overflow: visible !important;
+    left: 55%;
+    top: -48px;
+    right: 0;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+}
+.mana-class{
+    position: relative;
+}

@@ -1,0 +1,31 @@
+#header-navbar-home {
+    display: flex;
+    justify-content: space-between;
+}
+.logo-image-container{
+    background-image: url("https://schoolaura.com/Content/new_assets/images/header/logo-cloud.png");    
+    height: 100px;
+    width: 170px;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-size: contain;
+    -webkit-transform: translateY(-2%);
+    transform: translateY(-2%);
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+.logo-image{
+    height: 40px;
+    width: 120px;
+}
+.school-btn{
+    align-self: self-start;
+}
+.drop-down{
+    background-color: transparent;
+    border: 2px solid gray;
+    
+}
