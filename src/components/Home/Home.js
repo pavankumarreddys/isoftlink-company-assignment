@@ -23,7 +23,7 @@ export const Home = () => {
                 <div className='hero-services-bg'></div>
                 <div className='card-same flex flex-col items-center text-center'>
               <h1 className='font-bold mb-4'>ENTERANCE<br/>Solution</h1>
-              <button className='card-btn p-2'>Exam</button>
+              <button className='card-btn p-2 '>Exam</button>
               <button className='card-btn p-2'>Course</button>
               <p className='flex items-center mt-2'>Read more<MdKeyboardArrowRight/></p>
                 </div>

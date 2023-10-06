@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import {BsFillBuildingFill} from 'react-icons/bs'
 import {BiSolidDownArrow} from 'react-icons/bi'
 import './index.css'
 export const HeaderNavbar = () => {
-    const [home,setHome] = useState(true)
+    const [home,setHome] = useState(false)
   return (
     <div id='header-navbar-home'>
             <div className='logo-image-container' >
@@ -12,11 +13,33 @@ export const HeaderNavbar = () => {
             <div className='flex pt-2'>
                 <div>
                 <div className='mr-2 text-white flex justify-items-start items-start hrink'>
-                    Home
-                    <button className='mt-2 text-white pl-1'><BiSolidDownArrow size={"13px"}/></button>
+                    <Link
+                    onMouseEnter={() => setHome(true)}
+                    onMouseLeave={() => setHome(false)} 
+                    to="/"
+                    >Home</Link>
+                    <button 
+                    onMouseEnter={() => setHome(true)}
+                    onMouseLeave={() => setHome(false)}
+                    className='mt-2 text-white pl-1'><BiSolidDownArrow size={"13px"}/></button>
                 </div>
                 {home &&
-                    <div className='drop-down'>Home 1</div>
+                    <div className='flex flex-col'>
+                    <Link onMouseEnter={() => setHome(true)}
+                        onMouseLeave={() => setHome(false)} 
+                        to="/home1"
+                        className='drop-down rounded-t-lg border-2 border-red-200 border-b-red-500 '>Home 1</Link>
+                    <Link
+                    to="/home2"
+                    onMouseEnter={() => setHome(true)}
+                    onMouseLeave={() => setHome(false)}
+                    className='drop-down border-1 border-red-200 border-red-500 '>Home 2</Link>
+                    <Link
+                    to="/home3" 
+                    onMouseEnter={() => setHome(true)}
+                    onMouseLeave={() => setHome(false)}
+                    className='drop-down rounded-b-lg border-2 border-red-200 border-t-red-500 '>Home 3</Link>
+                    </div>
                     }
                 </div>
                 <div className='mr-2 text-white flex justify-items-start items-start hrink'>
